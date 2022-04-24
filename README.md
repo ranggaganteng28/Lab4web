@@ -452,5 +452,167 @@ pretium ac.</p>
     float: right;
 }
 ```
+* Maka hasilnya akan seperti ini
+![content](img/content2.png)
+
+# Pertanyaan dan Tugas
+
+## 1. Tambahkan Layout untuk menu About
+> buat single layout yang berisi deskripsi, portfolio, dll
+## 2. Tambahkan layout untuk menu Contact
+> yang berisi form isian: nama, email, message, dll
+# Jawab
+
+## 1. Menambahkan Menu About.
+
+**HTML**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>About Me</h1>
+        </header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="about.html"  class="active">About</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+        <section id="about">
+            <div class="bio">
+                <img src="/img/Rs.jpeg" alt="" >
+                <h2>Rangga Saputra</h2>
+                <p class="p-bio">Perkenalkan saya Rangga Saputra, saya sedang belajar memahami HTML dan CSS serta senang mengedit video</p>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2022 - Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+        </section>
+        <footer>
+            <p>&copy; 2022 - Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+</body>
+</html>
+```
+
+**CSS**
+
+```css
+/* about panel */
+#about {
+    padding: 15px;
+}
+.bio img {
+    float: left;
+    margin: 15px;
+    border-radius: 50%;
+    width: 160px;
+    border: 2px solid black;
+}
+.bio h2 {
+    position: relative;
+    margin: 20px;
+}
+.bio p.p-bio {
+    font-size: 15px;
+    margin: 20px;
+}
+```
+
+Hasilnya seperti berikut.
+![about](img/about.png)
+
+## 2. Membuat Menu Kontak.
+### HTML
+``` hTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Kontak</h1>
+        </header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="about.html">About</a>
+            <a href="kontak.html" class="active">Kontak</a>
+        </nav>
+        <div id="c-kontak">
+            <div id="h-kontak">
+                <h2>Kontak saya</h2>
+            </div>
+            <section id="form-kontak">
+                <form action="#">
+                    <input type="text" id="form-isi" placeholder="Nama">
+                    <input type="email" id="form-isi" placeholder="Email">
+                    <textarea name="" id="form-isi" cols="30" rows="10" placeholder="Pesan"></textarea>
+                    <button>Kirim</button>
+                </form>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2022 - Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+</body>
+</html>
+```
+## CSS
+```css
+/* kontak panel */
+
+#form-kontak {
+    padding: 20px;
+    width: 95%;
+}
+
+#h-kontak {
+    margin: 20px;
+}
+
+#form-isi {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid  #1f5faa;
+    border-radius: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    float: right;
+    background-color: #1f5faa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+```
+Hasilnya akan seperti ini
+![contak](img/kontak.png)
+
 
 
